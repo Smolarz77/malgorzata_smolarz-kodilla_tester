@@ -1,5 +1,4 @@
-public class Test {
-
+public class HelloWorld {
     public static void main(String[] args) {
         String powitanie = "Hello World";
         String imie = "Gosia";
@@ -11,5 +10,6 @@ public class Test {
         System.out.println(litera);
     }
 
-
 }
+
+
