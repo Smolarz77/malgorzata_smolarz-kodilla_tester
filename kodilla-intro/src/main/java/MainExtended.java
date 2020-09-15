@@ -6,11 +6,11 @@ public class MainExtended {
         char clas = 'C';
         boolean isTrue = false;
         boolean right = true;
-        System.out.println(name);
-        System.out.println(age);
-        System.out.println(heigh);
-        System.out.println(clas);
-        System.out.println(isTrue);
+        System.out.println(name +" "+ age +" "+ heigh + " " +clas);
+
+        if (true){
+            System.out.println(isTrue);}
+            else
         System.out.println(right);
 
 
