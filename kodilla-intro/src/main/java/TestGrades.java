@@ -1,9 +1,10 @@
 public class TestGrades {
     public static void main (String[] args){
         Grades grades = new Grades();
-        grades.add(4);
-        grades.add(4);
-        grades.add(8);
-        System.out.println(grades.returnLastGrade() + "      " + grades.returnAverage2());
+        grades.addValue(1);
+        grades.addValue(10);
+        grades.addValue(10);
+
+        System.out.println("Ostatnio dodana ocenę  " + grades.returnLastGrade() + "  Srednia ocen   " + grades.returnAverageGrade());
 
 }}

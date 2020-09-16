@@ -5,11 +5,11 @@ public class Grades {
 
     public Grades() {
         this.grades = new int[10];
-        this.size = 0;
+        this.size = 1;
 
     }
 
-    public void add(int value) {
+    public void addValue(int value) {
         if (this.size == 10) {
             return;
         }
@@ -17,19 +17,19 @@ public class Grades {
         size++;
     }
 
-    public int returnLastGrade() {
+    public int returnLastGrade() {       //ostatnia dodana ocena
 
         return this.grades[this.size - 1];
 
 
     }
 
-    public double average() {
+    public double average() {     //srednia ocen
         return (Arrays.stream(grades).sum()) / size;
     }
 
 
-    public double returnAverage2() {
+    public double returnAverageGrade() {
         int sum = 0;
         for (int i = 0; i < size; i++) {
             sum += this.grades[i];

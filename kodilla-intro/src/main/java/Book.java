@@ -1,7 +1,7 @@
 public class Book {
 
     private String author, title;
-    static String book = "book.of Book";
+    static String book = "Isaac Asimov, The Galaxy";
 
     Book() {
 
