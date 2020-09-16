@@ -4,7 +4,7 @@ public class RandomNumbers {
 
     public static void main(String[] args) {
         for (int i = 0; i < 500; i++) {
-            System.out.println(randomBetween(0, 30));
+            System.out.println("Liczby z zakresu 0-30" + "    "+randomBetween(0, 30) + " Najwieksza" + "Najmniejsza" );
 
         }
     }
@@ -17,7 +17,10 @@ public class RandomNumbers {
         return a1;
 
     }
+
+
 }
+
 
 
 
