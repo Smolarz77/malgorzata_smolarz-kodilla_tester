@@ -1,24 +1,43 @@
 import java.util.Random;
-import java.util.stream.IntStream;
+
 public class RandomNumbers {
+    public int Numbers ()
+    {
+        Random random = new Random();
+        return random.nextInt(31);
+    }
 
-    public static void main(String[] args) {
-        for (int i = 0; i < 500; i++) {
-            System.out.println("Liczby z zakresu 0-30" + "    "+randomBetween(0, 30) + " Najwieksza" + "Najmniejsza" );
+    public int min (int min, int min2)  //liczba min
+    {
+        if (min2 < min)
+            min = min2;
+        return min;
+    }
 
+    public int max (int max, int max2)  //liczba max
+    {
+        if(max2 > max)
+            max = max2;
+        return max;
+    }
+
+    public static void main (String[] args)
+    {
+        RandomNumbers random = new RandomNumbers();
+
+        int min = 0;
+        int max = 0;
+        int sum = 0;
+
+        while (sum <= 5000)
+        {
+            sum += random.Numbers();
+            min = random.min(min, random.Numbers());
+            max = random.max(max, random.Numbers());
         }
+
+        System.out.println("Najmniejsza wartosc  "+ min + "   " +"Najwieksza wartosc  "+ max + "   " + "Suma przekracza 5000 ->" +sum);
     }
-
-    static int randomBetween(int start, int end) {
-
-        Random random = new Random();   //tutaj zwracane sa liczby  od 0 do 30//
-        int a1 = random.nextInt(end - start + 1);
-        int a2 = a1 + start;
-        return a1;
-
-    }
-
-
 }
 
 
