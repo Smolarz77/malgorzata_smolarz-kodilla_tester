@@ -4,8 +4,9 @@ public class Colors {
 
     public static String getUserSelection2() {
         Scanner scanner2 = new Scanner(System.in);
+
         while (true) {
-            System.out.println("Enter your first letter (B, R, Y, G):");
+            System.out.println("Enter your first letter (B -blue, R -red, Y -yellow, G  -green):");
             String calc2 = scanner2.nextLine().trim().toUpperCase();
             switch (calc2){
                 case "B" : return "Blue";
@@ -16,14 +17,13 @@ public class Colors {
 
                     System.out.println("Wrong letter. Try again");
             }}}
-            public static int getValue2() {
-                Scanner scanner2 = new Scanner(System.in);
-                System.out.println("Enter first letter: ");
-                int val2 = scanner2.nextInt();
-                return val2;
+            public static void main(String[] args){
 
-            }
-}
+                System.out.println(getUserSelection2());
+
+
+
+}}
 
 
 
