@@ -1,3 +1,5 @@
+package pl.kodilla.intro;
+
 public class MainExtended {
     public static void main(String[] args){
         String name = "Gosia";

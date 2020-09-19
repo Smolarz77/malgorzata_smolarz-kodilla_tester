@@ -1,3 +1,5 @@
+package pl.kodilla.intro;
+
 public class HelloWorld {
     public static void main(String[] args) {
             String powitanie = "Hello World";
