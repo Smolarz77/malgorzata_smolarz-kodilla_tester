@@ -3,4 +3,7 @@ include 'kodilla-intro'
 include 'HelloWorld'
 include 'test'
 include 'kodilla-intro'
+include 'Obiektowosc_java'
+include 'test'
+include 'Zad_2.6'
 

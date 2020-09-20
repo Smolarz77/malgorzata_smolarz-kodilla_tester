@@ -1,3 +1,5 @@
+package pl.kodilla.intro;
+
 import java.util.Arrays;
 public class Grades {
     private int[] grades;

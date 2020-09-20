@@ -1,3 +1,5 @@
+package pl.kodilla.intro;
+
 enum KodillaCourse {
     JD,  /* Java Developer */
     JDP, /* Java Developer Plus */

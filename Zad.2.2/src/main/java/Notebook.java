@@ -41,10 +41,13 @@ public class Notebook {
             System.out.println("Ten notebook ma dobra cene, ale jest stary");
         }
 
-                else if  (this.year >= 2015 && this.price > 1500){
-                    System.out.println(" Ten notebok to nie jest dobry wybor");
+        else if  (this.year >= 2015 && this.price > 1500){
+            System.out.println(" Ten notebok to nie jest dobry wybor");
 
-                }
-            }
+        }
+    }
 
 }
+
+
+

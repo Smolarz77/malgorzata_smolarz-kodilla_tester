@@ -1,3 +1,5 @@
+package pl.kodilla.intro;
+
 public class Application {
     String name;
     double age;

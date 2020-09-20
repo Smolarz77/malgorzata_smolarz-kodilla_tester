@@ -1,3 +1,5 @@
+package pl.kodilla.intro;
+
 public class AdvCalcApplication {
 
 public static void main(String[] args) {

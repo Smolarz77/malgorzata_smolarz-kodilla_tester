@@ -1,11 +1,9 @@
-package pl.kodilla.intro;
-
 public class FirstClass {
     public static void main(String[] args) {
 
-Notebook notebook = new Notebook( 600, 1000, 2010);
-System.out.println("Waga: "+notebook.weight + " Cena:  " + notebook.price + " Rok:  " +notebook.year);
-notebook.checkPrise();notebook.checkWeight();notebook.checkYearAndPrice();
+        Notebook notebook = new Notebook( 600, 1000, 2010);
+        System.out.println("Waga: "+notebook.weight + " Cena:  " + notebook.price + " Rok:  " +notebook.year);
+        notebook.checkPrise();notebook.checkWeight();notebook.checkYearAndPrice();
 
         Notebook heavyNotebook = new Notebook(2000, 1500, 2012);
         System.out.println("Waga: " + heavyNotebook.weight + " Cena:  "+ heavyNotebook.price + " Rok: " +heavyNotebook.year);
@@ -17,5 +15,5 @@ notebook.checkPrise();notebook.checkWeight();notebook.checkYearAndPrice();
         oldNotebook.checkPrise();oldNotebook.checkWeight();oldNotebook.checkYearAndPrice();
 
     }
-}
 
+}

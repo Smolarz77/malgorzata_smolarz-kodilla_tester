@@ -1,3 +1,5 @@
+package pl.kodilla.intro;
+
 public class Calculator {
 
         public static Calculator calculator2;
