@@ -1,4 +1,6 @@
-package com.kodilla.intro;
+package com.kodilla.intro.z2_8;
+
+import com.kodilla.intro.z2_8.AdvCalculator;
 
 public class AdvCalcApplication {
 

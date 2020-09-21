@@ -1,4 +1,4 @@
-package com.kodilla.intro;
+package com.kodilla.intro.z2_4;
 
 import java.util.Arrays;
 public class Grades {

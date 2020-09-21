@@ -1,4 +1,4 @@
-package com.kodilla.intro;
+package com.kodilla.intro.z2_5;
 
 import java.util.Random;
 

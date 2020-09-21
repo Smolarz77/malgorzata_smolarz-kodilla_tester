@@ -1,4 +1,4 @@
-package com.kodilla.intro;
+package com.kodilla.intro.z2_7;
 
 public class Book {
     private String author;

@@ -6,4 +6,6 @@ include 'kodilla-intro'
 include 'Obiektowosc_java'
 include 'test'
 include 'Zad_2.6'
+include 'com.kodilla'
+include 'kodilla-basic-tests'
 

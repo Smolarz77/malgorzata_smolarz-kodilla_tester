@@ -1,4 +1,4 @@
-package com.kodilla.intro;
+package com.kodilla.intro.z2_8;
 
 enum KodillaCourse {
     JD,  /* Java Developer */

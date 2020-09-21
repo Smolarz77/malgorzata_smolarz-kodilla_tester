@@ -1,4 +1,6 @@
-package com.kodilla.intro;
+package com.kodilla.intro.z2_7;
+
+import com.kodilla.intro.z2_7.Calculator;
 
 public class CalcApplication {
     public static void main(String[] args){
