@@ -1,6 +1,6 @@
-package pl.kodilla.intro;
+package com.kodilla.intro;
 
-import pl.kodilla.intro.Grades;
+import com.kodilla.intro.z2_4.Grades;
 
 public class TestGrades {
     public static void main (String[] args){

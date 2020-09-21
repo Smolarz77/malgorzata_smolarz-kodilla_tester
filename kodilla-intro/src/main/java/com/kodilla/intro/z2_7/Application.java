@@ -1,4 +1,4 @@
-package pl.kodilla.intro;
+package com.kodilla.intro;
 
 public class Application {
     String name;

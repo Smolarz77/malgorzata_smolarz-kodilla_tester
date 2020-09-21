@@ -1,4 +1,4 @@
-package com.kodilla.z2_6;
+package com.z2_6;
 
 public class Validator {
     public static void validateUser(User user){
