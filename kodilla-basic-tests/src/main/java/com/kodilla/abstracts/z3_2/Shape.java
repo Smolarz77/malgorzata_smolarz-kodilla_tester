@@ -1,4 +1,4 @@
-package com.kodilla.inheritance.homework.z3_2;
+package com.kodilla.abstracts.z3_2;
 
 public abstract class Shape {
 
@@ -10,6 +10,7 @@ public abstract class Shape {
     {
         this.a = a;
         this.b = b;
+
 
     }
 
@@ -25,9 +26,12 @@ public abstract class Shape {
     public int getB(){
         return b;
     }
+    public int getH(){
+        return h;
+    }
 
-    public abstract int surface(Shape shape);
+    public abstract int surfaceMethod(Shape shape);  //metoda: powierzchnia
 
-    public abstract int circuit(Shape shape);
+    public abstract int circuitMethod(Shape shape);  //metoda: obwód
 
 }

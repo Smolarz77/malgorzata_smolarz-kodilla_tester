@@ -1,8 +1,4 @@
-package com.kodilla.inheritance.homework.z;
-
-import com.kodilla.inheritance.homework.z.Example1;
-import com.kodilla.inheritance.homework.z.Example2;
-import com.kodilla.inheritance.homework.z.OperatingSystem;
+package com.kodilla.inheritance.homework.z3_1;
 
 public class OperatingSystemAction {
     public static void main(String[]args){

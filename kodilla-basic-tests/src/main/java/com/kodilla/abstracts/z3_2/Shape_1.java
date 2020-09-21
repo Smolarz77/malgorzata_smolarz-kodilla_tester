@@ -1,4 +1,4 @@
-package com.kodilla.inheritance.homework.z3_2;
+package com.kodilla.abstracts.z3_2;
 
 public class Shape_1 extends Shape{
     public Shape_1(int a, int b){
@@ -6,12 +6,14 @@ public class Shape_1 extends Shape{
     }
 
     @Override
-    public int surface(Shape shape) {
+    public int surfaceMethod(Shape shape) {     //obliczanie powierzchni, prostokat
+
         return shape.getA() * shape.getB();
     }
 
     @Override
-    public int circuit(Shape shape) {
+    public int circuitMethod(Shape shape) {   //obliczanie obwodu,prostokat
+
         return 2*shape.getA() + 2*shape.getB();
     }
 }

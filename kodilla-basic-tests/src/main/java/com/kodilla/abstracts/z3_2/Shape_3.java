@@ -1,17 +1,19 @@
-package com.kodilla.inheritance.homework.z3_2;
+package com.kodilla.abstracts.z3_2;
 
 public class Shape_3 extends Shape {
-    public Shape_3(int a) {
-        super(a);
+    public Shape_3(int a, int b, int h) {
+
+        super(a,b);
     }
 
     @Override
-    public int surface(Shape shape) {
-        return shape.getA() * shape.getA();
+    public int surfaceMethod(Shape shape){       //obliczanie trojkata
+        return shape.getA() + shape.getB()+shape.getA()/2;
+
     }
 
     @Override
-    public int circuit(Shape shape) {
-        return 4*shape.getA();
+    public int circuitMethod(Shape shape) {
+        return shape.getA() + shape.getB()+shape.getA()+shape.getH();
     }}
 
