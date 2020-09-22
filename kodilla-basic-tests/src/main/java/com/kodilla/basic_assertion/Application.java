@@ -23,11 +23,11 @@ public class Application {
         }
 
         int squareResult = calculator.square(a);
-        boolean squareCorrect = ResultChecker.assertEquals(26, subtractResult);
-        if (squareCorrect){
-            System.out.println("Metoda square działa poprawnie dla liczb " + a );}
-        else{
-            System.out.println("Metoda square nie działa poprawnie dla liczb " + a );
+        boolean squareCorrect = ResultChecker.assertEquals(26, squareResult);
+        if (squareCorrect) {
+            System.out.println("Metoda square działa poprawnie dla liczb " + a);
+        } else {
+            System.out.println("Metoda square nie działa poprawnie dla liczb " + a);
         }
     }
     }
