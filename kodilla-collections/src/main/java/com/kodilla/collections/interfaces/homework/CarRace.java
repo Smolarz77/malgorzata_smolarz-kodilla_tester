@@ -13,7 +13,7 @@ package com.kodilla.collections.interfaces.homework;
 
             Toyota toyota = new Toyota(100);
             doRace(toyota);
-            System.out.println("Speed Fiat: " + ford.getSpeed() + "\nSpeed Ford: " + fiat.getSpeed() + "\nSpeed Toyota: " + toyota.getSpeed());
+            System.out.println("Speed Fiat: " + fiat.getSpeed() + "\nSpeed Ford: " + ford.getSpeed() + "\nSpeed Toyota: " + toyota.getSpeed());
 
 
         }
