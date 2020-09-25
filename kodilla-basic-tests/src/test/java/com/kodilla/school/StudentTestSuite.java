@@ -1,6 +1,6 @@
-package com.kodilla.abstracts.school;
+package com.kodilla.school;
 
-import com.kodilla.shool.Student;
+import com.kodilla.school.Student;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

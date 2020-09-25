@@ -1,4 +1,4 @@
-package com.kodilla.abstracts.school;
+package com.kodilla.school;
 
 public class Student {
     private String name;

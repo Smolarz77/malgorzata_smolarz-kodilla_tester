@@ -5,19 +5,18 @@ public class User {
     private double age;
     private double height;
 
-    public User(String name, double age, double height) {
-        this.name = name;
-        this.age = age;
+    public User(String name, double age, double height) {   //Konstruktor
+        this.name = name;    //słówko this wskazuje, że w ramach konstruktora
+        this.age = age;       //chcemy odwołać się do atrybutów klasy
         this.height = height;
     }
 
-    public String getName() {
-        return name;
-    }
-
+    public String getName() { return name; }
     public void setName(String name) {
+
         this.name = name;
     }
+
 
     public double getAge() {
         return age;

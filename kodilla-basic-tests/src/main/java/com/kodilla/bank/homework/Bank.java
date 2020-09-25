@@ -1,2 +1,4 @@
-package com.kodilla.bank.homework;public class Bank {
+package com.kodilla.bank.homework;
+
+public class Bank {
 }

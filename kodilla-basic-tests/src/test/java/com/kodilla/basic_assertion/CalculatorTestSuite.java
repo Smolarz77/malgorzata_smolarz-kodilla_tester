@@ -12,7 +12,7 @@ public class CalculatorTestSuite {
         int a = 5;
         int b = 8;
         int sumResult = calculator.sum(a, b);
-        assertEquals(13, sumResult);
+        assertEquals(14, sumResult);
     }
     @Test
     public void testSubtract() {      //odejmowanie

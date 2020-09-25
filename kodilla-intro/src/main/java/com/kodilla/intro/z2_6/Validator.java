@@ -8,7 +8,7 @@ public class Validator {
             } else {
                 System.out.println("User is younger than 30 or lower than 160cm");
             }
-            System.out.println("Imie: " + user.getName() + " " + "Wiek: " + user.getAge() + " Wysokosc:  " + user.getHeight());
+            System.out.println("Imie: " + user.getName() + " " + "Wiek: " + user.getAge() + " Wzrost:  " + user.getHeight());
 
         }
     }
