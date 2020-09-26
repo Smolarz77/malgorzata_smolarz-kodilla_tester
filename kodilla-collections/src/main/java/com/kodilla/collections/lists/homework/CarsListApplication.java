@@ -11,8 +11,8 @@ import java.util.List;
     public class CarsListApplication {
         public static void main(String[] args) {
             List<Car> cars = new ArrayList<>();   //Kolekcja samochodów  (typu ArrayList),
-                                            // której typem elementów jest dowolna klasa
-                                         //  implementująca interfejs Car.
+            // której typem elementów jest dowolna klasa
+            //  implementująca interfejs Car.
 
             Ford ford = new Ford();
             cars.add(new Fiat());
