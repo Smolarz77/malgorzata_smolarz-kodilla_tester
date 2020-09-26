@@ -12,4 +12,10 @@ public class Circle implements Shape{
     public  double getPerimeter (){
         return 2 * Math.PI * radius;
     }
-}
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                '}';
+    }}

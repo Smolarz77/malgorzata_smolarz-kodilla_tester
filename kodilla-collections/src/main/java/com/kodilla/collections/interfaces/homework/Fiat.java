@@ -4,7 +4,8 @@ import java.util.Random;
 
 public class Fiat implements Car {
 
-        int speed;
+    int speed;
+
     @Override
     public void increaseSpeed() {
         Random random = new Random();
@@ -13,19 +14,19 @@ public class Fiat implements Car {
     }
 
 
+    @Override
+    public void decreaseSpeed() {
+        speed = speed - 2;
 
-        @Override
-        public void decreaseSpeed() {
-            speed=  speed - 2;
+    }
 
-        }
     @Override
     public int getSpeed() {
         return speed;
     }
 
-    }
 
+}
 
 
 

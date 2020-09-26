@@ -22,9 +22,9 @@ public class Toyota implements Car{
     @Override
     public int getSpeed() {
         return speed;
-    }
 
-        }
+
+        }}
 
 
 
