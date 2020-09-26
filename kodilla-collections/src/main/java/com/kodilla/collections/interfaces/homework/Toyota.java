@@ -1,26 +1,30 @@
 package com.kodilla.collections.interfaces.homework;
 
-public class Toyota implements Car{
-    int speed;
+import java.util.Random;
 
-    public Toyota(int speed){
-        this.speed=speed;
+public class Toyota implements Car{
+
+        int speed;
+    @Override
+    public void increaseSpeed() {
+        Random random = new Random();
+        int speed2 = random.nextInt(30);
+        speed = speed + speed2;
     }
 
+
+
+        @Override
+        public void decreaseSpeed() {
+            speed=  speed -9;
+
+        }
     @Override
     public int getSpeed() {
         return speed;
     }
 
-    @Override
-    public void increaseSpeed() {
-        speed = speed + 4;
+        }
 
-    }
 
-    @Override
-    public void decreaseSpeed() {
-        speed= speed -3;
 
-    }
-}
