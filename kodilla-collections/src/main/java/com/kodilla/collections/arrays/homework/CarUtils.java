@@ -7,13 +7,13 @@ import com.kodilla.collections.interfaces.homework.Ford;
 
 public class CarUtils {
     public static void describeCar(Car car) {
-        System.out.println(" -----------------");
+        System.out.println(" ----------------------------");
         System.out.println("Car Name:  " + getCarName(car));
         System.out.println("Car speed:  " + car.getSpeed());
 
     }
 
-private static String getCarName(Car car) {
+public static String getCarName(Car car) {
     if (car instanceof Fiat)
         return "Fiat";
     else if (car instanceof Ford)
@@ -23,4 +23,5 @@ private static String getCarName(Car car) {
     else
         return "Unknown car name";
 }
+
 }

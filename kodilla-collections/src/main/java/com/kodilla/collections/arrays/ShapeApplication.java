@@ -11,11 +11,11 @@ public class ShapeApplication {
 
 
     public static void main(String[] args) {
-        Shape[] shapes = new Shape[5];
-        for (int n = 0; n < shapes.length;  n++)
+        Shape[] shapes = new Shape[5];   //tablica przechowuje 5 elementow
+        for (int n = 0; n < shapes.length;  n++)   //wywolanie metody drawShape
             shapes[n] = drawShape();
         for (Shape shape : shapes)
-            ShapeUtils.displayShapeInfo(shape);
+            ShapeUtils.displayShapeInfo(shape);   //dla każdego elementu w tablicy shapes (dla każdej figury) wyświetlamy informacje o wymiarach
     }
     private static Shape drawShape() {
 

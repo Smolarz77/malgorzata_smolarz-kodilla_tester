@@ -24,7 +24,15 @@ public class Toyota implements Car{
         return speed;
 
 
-        }}
+        }
+
+    @Override
+    public String toString() {
+        return "Toyota{" +
+                "speed=" + speed +
+                '}';
+    }
+}
 
 
 

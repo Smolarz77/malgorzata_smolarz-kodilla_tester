@@ -6,7 +6,10 @@ import com.kodilla.collections.interfaces.homework.Fiat;
 import com.kodilla.collections.interfaces.homework.Ford;
 import java.util.Random;
 
-
+//Klasa CarsApplication z metodą public static Car drawCar(), która będzie tworzyła losowy samochód z losowo zwiększoną prędkością.
+//Metoda main, w której znajdzie się tablica o losowym rozmiarze od 1 do 15 samochodów. Do każdego elementu tablicy wpisz
+// wylosowany przy pomocy metody drawCar samochód,
+// a następnie przy pomocy pętli wyświetl informacje o wszystkich samochodach znajdujących się w tablicy.
 public class CarsApplication {
     public static void main(String[] args) {
 
@@ -15,8 +18,8 @@ public class CarsApplication {
             cars[n] = drawCar();
 
         for (Car car : cars) {
-            CarUtils.describeCar(car);
             car.increaseSpeed();
+            CarUtils.describeCar(car);
         }}
 
         public static Car drawCar(){

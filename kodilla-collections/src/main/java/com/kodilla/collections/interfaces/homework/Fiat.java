@@ -6,6 +6,8 @@ public class Fiat implements Car {
 
     int speed;
 
+
+
     @Override
     public void increaseSpeed() {
         Random random = new Random();
@@ -26,7 +28,13 @@ public class Fiat implements Car {
     }
 
 
-}
+    @Override
+    public String toString() {
+        return "Fiat{" +
+                "speed=" + speed +
+                '}';
+    }}
+
 
 
 
