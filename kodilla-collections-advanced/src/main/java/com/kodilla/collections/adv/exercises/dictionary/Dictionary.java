@@ -2,27 +2,30 @@ package com.kodilla.collections.adv.exercises.dictionary;
 
 import java.util.*;
 
-import static java.util.Collections.*;
+public class Dictionary { // klasa sluzy do dodawania slow do slownika oraz do wyszukiwania
+    Map<String, List<EnglishWord>> dictionary = new HashMap<>(); // Klasa będzie przechowywała wpisy słownika w mapie
 
-public class Dictionary {
-    Map<String, List<EnglishWord>> dictionary = new HashMap<>();
 
     public void addWord(String polishWord, EnglishWord englishWord) {
-        List<EnglishWord>englishWords=dictionary.getOrDefault(polishWord, new ArrayList<>());
+        List<EnglishWord> englishWords =
+                dictionary.getOrDefault(polishWord, new ArrayList<>());
         englishWords.add(englishWord);
         dictionary.put(polishWord, englishWords);
-
-    }
-    public int size(){
-        return dictionary.size();
     }
 
     public List<EnglishWord> findEnglishWords(String polishWord) {
-        return emptyList();
+        return dictionary.getOrDefault(polishWord, Collections.emptyList());
     }
-
     public List<EnglishWord> findEnglishWords(String polishWord, PartOfSpeech partOfSpeech) {
-        return Collections.emptyList();
+        List<EnglishWord> result = new ArrayList<>();
+        for (EnglishWord englishWord : dictionary.getOrDefault(polishWord, Collections.emptyList())) {
+            if (englishWord.getPartOfSpeech().equals(partOfSpeech))
+                result.add(englishWord);
+        }
+        return result;
     }
 
+    public int size() {
+        return dictionary.size();
+    }
 }
