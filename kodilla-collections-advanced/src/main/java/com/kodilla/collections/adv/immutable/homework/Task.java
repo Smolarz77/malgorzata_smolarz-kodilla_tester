@@ -10,11 +10,11 @@ public Task(String title, int duration){
     this.duration=duration;
 }
 
-    public String getTitle() {
+    public final String getTitle() {
         return title;
     }
 
-    public int getDuration() {
+    public final int getDuration() {
         return duration;
     }
 }
