@@ -1,23 +1,26 @@
 package com.kodilla.collections.adv.exercises.dictionary;
-
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class DictionaryTestSuite {
 
     @Test
     public void testAdWord() {
-        // given  – w tej sekcji przygotowujemy dane testowe
+        // Given – w tej sekcji przygotowujemy dane testowe, obiekt do testowania oraz
+        // wszystkie inne rzeczy, które muszą zostać przygotowane zanim nastąpi wywołanie testowanej metody.
+
         Dictionary dictionary = new Dictionary();
         String polishWord = "stos";
         EnglishWord englishWord = new EnglishWord(PartOfSpeech.NOUN,"stack");
-        // when: wywołanie metody, którą testuje nasz test.
+
+        // when: When – w tej sekcji z reguły znajduje się tylko jedna linia –
+        // jest to wywołanie metody, którą testuje nasz test.
         dictionary.addWord(polishWord, englishWord);
-        // then: sekcja poświęcona sprawdzeniu, czy testowana klasa zachowała się poprawnie
+
+        // then:sekcja poświęcona sprawdzeniu, czy testowana klasa zachowała się poprawnie – tutaj
+        // zamieszczamy wszystkie asercje.
         assertEquals(1, dictionary.size());
     }
 
@@ -36,8 +39,7 @@ class DictionaryTestSuite {
         expectedList.add(new EnglishWord(PartOfSpeech.NOUN, "play"));
         expectedList.add(new EnglishWord(PartOfSpeech.NOUN, "game"));
         assertEquals(expectedList, result);
-
-        //assertEquals(2, result.size());
+        assertEquals(2, result.size());
     }
 
     @Test

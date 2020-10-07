@@ -1,11 +1,9 @@
 package com.kodilla.collections.adv.exercises.homework;
 
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FlightFinderTestSuite {
     @Test
@@ -23,6 +21,7 @@ List<Flight> flightFinderList  = flightFinder.findFlightsFrom("Waszawa");
         expectedList.add(new Flight("Berlin", "Warszawa"));
         expectedList.add(new Flight("Paryz","Barcelona"));
         assertEquals(expectedList,flightFinderList );
+        assertEquals(2, flightFinderList);
 
     }
     @Test
@@ -37,6 +36,7 @@ List<Flight> flightFinderList  = flightFinder.findFlightsFrom("Waszawa");
         List<Flight>expectedList = new ArrayList<>();
         expectedList.add(new Flight("Mediolan","Warszawa"));
         assertEquals(expectedList,flightFinderList );
+        assertEquals(1,flightFinderList);
 
 
 
