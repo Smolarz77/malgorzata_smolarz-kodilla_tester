@@ -45,11 +45,6 @@ books.add(book3);
                 System.out.println("Suma = " + books.size());
                 for(Book b : books)
                     System.out.println(b.getAuthor() + " - " + b.getTitle());}}
-        }
-    private static void showBooks(List<Book> books) {
-        System.out.println(books.size());
-        for (Book book : books) {
-            System.out.println(book);
-        }
-    }
-    }
+
+
+    }}
