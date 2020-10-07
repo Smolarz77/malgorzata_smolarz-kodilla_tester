@@ -1,35 +1,26 @@
 package com.kodilla.collections.adv.special.homework;
-
-    //Klasę BookManager, która będzie posiadała metodę public Book createBook(String title,
-    // String author) i będzie tworzyła nowy obiekt klasy Book o zadanych parametrach.
-
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
-public class BookManager extends Book{
 
-        private String title;
-    private String author;
-
-        public BookManager(String author, String title) {
-            super(title, author);
+    public class BookManager  {
+        private Set<Book> bookSet;
+        public BookManager(){
+            this.bookSet= new HashSet<>();
         }
-        public Book book (String author, String title){
-            this.author=author;
-            this.title=title;
-            return  book(author, title);
+    public Book createBook(String title, String author) {  //metoda public Book createBook(String title, String author)
+        Book book = new Book(title, author);  //nowy obiekt klasy Book z paramerami title, author
+                                               // będzie tworzyła nowy obiekt klasy Book o zadanych parametrach.
+        if (!bookSet.contains(book)) {
+            bookSet.add(book);
+            return book;
         }
+        for (Book b : bookSet) {    //petla for-each
+             if (b.equals((book))) {
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        BookManager that = (BookManager) o;
-        return Objects.equals(author, that.author) &&
-                Objects.equals(title, that.title);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(author, title);
-    }
-}
+                return b;
+            }
+        }
+        return null;
+    }}
