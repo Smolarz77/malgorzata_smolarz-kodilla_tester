@@ -1,3 +1,5 @@
+package com.codilla.stream;
+
 import java.util.Objects;
 
 public class User {

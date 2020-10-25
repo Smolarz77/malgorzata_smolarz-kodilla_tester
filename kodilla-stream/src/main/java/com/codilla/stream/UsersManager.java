@@ -1,3 +1,6 @@
+package com.codilla.stream;
+
+import com.codilla.stream.UsersRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;
