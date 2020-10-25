@@ -10,7 +10,7 @@ public class TaskManager {
     public static void main(String[] args) {  //metoda main
         List<LocalDate> deadlines = TaskRepository.getTask()
                 .stream()
-                .filter(k -> k.getDeadline().isAfter(LocalDate.now()))
+                .filter(m -> m.getDeadline().isAfter(LocalDate.now()))
                 .map(Task::getDeadline)
                 .collect(Collectors.toList());
         System.out.println(deadlines);
