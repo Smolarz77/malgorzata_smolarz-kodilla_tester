@@ -15,7 +15,7 @@ public class Warehouse {
    }
 
     // metodę Order getOrder(String number), która wyszuka w kolekcji zamówienie o podanym numerze (użyj Stream) i je zwróci.
-    public Order getOrder(String number)throws  OrderDoesntExistException{
+    public Order getOrder(String number)throws OrderDoesntExistException {
         Order ord = orders
                 .stream()
                 .filter(f-> f.getNumber().equals(number))
