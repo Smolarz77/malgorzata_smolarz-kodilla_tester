@@ -20,4 +20,5 @@ findProject(':test:kodilla-stream')?.name = 'kodilla-stream'
 include 'kodilla-stream'
 include 'kodilla-stream'
 include 'homework'
+include 'kodilla-advanced-tests'
 
