@@ -21,4 +21,5 @@ include 'kodilla-stream'
 include 'kodilla-stream'
 include 'homework'
 include 'kodilla-advanced-tests'
+include 'kodilla-course'
 
