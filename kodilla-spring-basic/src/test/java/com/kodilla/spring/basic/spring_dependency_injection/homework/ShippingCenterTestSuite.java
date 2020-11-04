@@ -14,7 +14,7 @@ class ShippingCenterTestSuite {
     @Test
     public void shouldReturnSuccessMessage() {
         String a = "Package delivered to: Kalisz";
-        assertTrue(a.equals(shippingCenter.sendPackage("Kalisz",35)));
+        assertTrue(a.equals(shippingCenter.sendPackage("Kalisz",15)));
     }
 
     @Test
