@@ -9,11 +9,11 @@ public class SimpleApplication {
     }
 
     public void processMessage(String message, String receiver){
-            if (checkReceiver(receiver)) {
-                this.messageService.send(message, receiver);
-            }
-
+        if (checkReceiver(receiver)) {
+            this.messageService.send(message, receiver);
         }
+
+    }
     private boolean checkReceiver(String receiver) {
         return receiver != null && !receiver.isEmpty();
     }
