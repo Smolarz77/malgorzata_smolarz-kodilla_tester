@@ -28,4 +28,6 @@ include 'com.kodilla.spring.basic'
 include 'com.kodilla.spring.basic'
 include 'kodilla-spring-basic'
 include 'kodilla-spring-basic'
+include 'kodilla-rest-api'
+include 'kodilla-rest-api'
 

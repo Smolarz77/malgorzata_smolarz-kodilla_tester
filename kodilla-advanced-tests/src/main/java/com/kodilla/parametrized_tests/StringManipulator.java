@@ -5,5 +5,13 @@ public class StringManipulator {
         StringBuilder builder = new StringBuilder(input);
         return builder.reverse().toString().toLowerCase();
     }
-}
 
+    public int getStringLengthWithoutSpaces(String input) {
+        String value = input.replaceAll(" ", "");
+        return value.length();
+    }
+
+    public int countNumberOfCommas(String text) {
+        return text.length() - text.replace(",", "").length();
+    }
+}
