@@ -18,6 +18,7 @@ public class GamblingMachine {
         return count;
     }
 
+
     private void validateNumbers(Set<Integer> numbers) throws InvalidNumbersException {
         if (numbers.size() != 6) {
             throw new InvalidNumbersException();
@@ -34,6 +35,6 @@ public class GamblingMachine {
         while(numbers.size() < 6) {
             numbers.add(generator.nextInt(49) + 1);
         }
-        return numbers;
+        return  numbers;
     }
 }
