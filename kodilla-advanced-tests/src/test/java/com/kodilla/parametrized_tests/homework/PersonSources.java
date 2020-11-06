@@ -6,7 +6,7 @@ public class PersonSources {
 
     static Stream<Arguments> BMI() {
         return Stream.of(
-                Arguments.of("Very severely underweight", new Person(1.8,40.0).getBMI()),
+                Arguments.of("Very severely underweight", new Person(1.75,40.0).getBMI()),
                 Arguments.of("Severely underweight", new Person(1.82,50.0).getBMI()),
                 Arguments.of("Underweight", new Person(1.82,60.0).getBMI()),
                 Arguments.of("Normal (healthy weight)", new Person(71.2,80.0).getBMI()),
