@@ -15,7 +15,7 @@ public class Order {
     public Order (double orderValue, LocalDate orderDate, String user){
         this.orderValue=orderValue;
         this.orderDate=orderDate;
-        this.orderDate=orderDate;
+       this.user=user;
 
     }
 
