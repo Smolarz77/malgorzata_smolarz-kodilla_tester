@@ -31,8 +31,8 @@ class PersonTestSuite {
                 Arguments.of(1.83, 118, "Obese Class II (Severely obese)"),
                 Arguments.of(1.82, 134, "Obese Class III (Very severely obese)"),
                 Arguments.of(1.68, 130, "Obese Class IV (Morbidly Obese)"),
-                Arguments.of(1.69, 149, "Obese Class V (Super Obese)"),
-                Arguments.of(1.75, 180, "Obese Class VI (Hyper Obese)")
+                Arguments.of(1.69, 148, "Obese Class V (Super Obese)"),
+                Arguments.of(1.70, 180, "Obese Class VI (Hyper Obese)")
         );
     }
 
