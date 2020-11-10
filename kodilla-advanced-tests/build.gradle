@@ -1,23 +1,15 @@
-buildscript {
-    ext {
-        springBootVersion = '2.2.1.RELEASE'
-    }
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-    }
+plugins {
+    id 'java'
 }
 
-apply plugin: 'java'
-apply plugin: 'idea'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
+group 'com.kodilla'
+version '1.0-SNAPSHOT'
 
-group = 'com.kodilla'
-version = '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
+
+test {
+    useJUnitPlatform()
+}
 
 repositories {
     mavenCentral()
@@ -28,7 +20,5 @@ dependencies {
     testImplementation ("org.junit.jupiter:junit-jupiter-params:5.4.2")
     testImplementation('org.mockito:mockito-core:3.1.0')
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
-    test {
-        useJUnitPlatform()
-    }
+    testCompile group: 'junit', name: 'junit', version: '4.12'
 }
