@@ -1,7 +1,7 @@
 package com.kodilla.rest.domain;
 
 import java.util.Objects;
-
+//Dto  Data Transfer Object - objekt transferowy
 public class BookDto {
     private String title;
     private String author;
@@ -21,6 +21,8 @@ public class BookDto {
     public String getAuthor() {
         return author;
     }
+    //Uzupełnij klasę BookDto o metody equals oraz hashCode, dzięki czemu będziesz mieć możliwość usuwania obiektów z
+    // listy książek przy pomocy metody remove(Object o) kolekcji books wewnątrz klasy BookService.
 
     @Override
     public boolean equals(Object o) {
