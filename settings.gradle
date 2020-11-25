@@ -32,4 +32,6 @@ include 'kodilla-rest-api'
 include 'kodilla-rest-api'
 include 'mockito'
 include 'SOAP'
+include 'kodilla-soap'
+include 'task_app_backend'
 

@@ -33,6 +33,7 @@ public class BookController {
 public void addBook(@RequestBody BookDto bookDto){
     bookService.addBook(bookDto);
 }
+//metody pozwalające na usunięcie wybranej książki z kolekcji.
 
     @DeleteMapping
     public void removeBook(@RequestBody BookDto bookDto) {
