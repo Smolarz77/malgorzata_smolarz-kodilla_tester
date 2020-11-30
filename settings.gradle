@@ -34,4 +34,5 @@ include 'mockito'
 include 'SOAP'
 include 'kodilla-soap'
 include 'task_app_backend'
+include 'kodilla-selenium'
 
