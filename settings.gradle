@@ -51,4 +51,7 @@ include 'kodilla-google-selenium'
 include 'test'
 include 'test'
 include 'kodilla-google-selenium'
+include 'kodilla-cucumber'
+include 'kodilla-cucumber'
+include 'kodilla-cucumber'
 
