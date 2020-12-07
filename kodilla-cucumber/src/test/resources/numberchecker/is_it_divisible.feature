@@ -1,13 +1,11 @@
-Feature: Is it divisible?
-  All numbers are divisible
-
-  Scenario Outline: Number is or isn`t divisible
-    Given number is <number>
-    When I ask number is divisible
-    Then I should be told <answer>
+Feature: Is divisible by number?
+  Scenario Outline: Number is or isn't divisible by number
+    Given Game has a <number>
+    When Checking if number is divisible by 3 and 5
+    Then Game should return <answer>
     Examples:
-      | number | answer |
-      | 30 | "FizzBuzz" |
-      | 10  | "Buzz" |
-      | 9  | "Fizz" |
-      | 7  | "None" |
+      | number | answer     |
+      | 24      | "Fizz"     |
+      | 60     | "FizzBuzz" |
+      | 10     | "Buzz"     |
+      | 11      | "None"     |

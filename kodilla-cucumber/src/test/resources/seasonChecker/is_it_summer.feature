@@ -16,3 +16,4 @@ Feature: Is it Summer?
       | first day of August   | "Yes! Summer!" |
       | 21th day of June      | "Yes! Summer!" |
       | 23th day of August    | "Yes! Summer!" |
+
