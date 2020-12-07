@@ -8,13 +8,14 @@ import pages.GoogleSearch;
 
 public class TestGoogle {
 
+
     WebDriver driver;
 
     @Before
     public void testSetup() {
-        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         driver = new ChromeDriver();
-        driver.navigate().to("http://wwww.google.com");
+        driver.navigate().to("http:/www.google.com");
     }
 
     @After
@@ -27,4 +28,5 @@ public class TestGoogle {
         GoogleSearch googleSearch = new GoogleSearch(driver);
         googleSearch.searchResults();
     }
+
 }
