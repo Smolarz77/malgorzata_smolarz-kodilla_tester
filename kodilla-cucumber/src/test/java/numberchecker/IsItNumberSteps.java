@@ -8,19 +8,9 @@ public class IsItNumberSteps implements En {
     private String answer;
 
     public IsItNumberSteps() {
-        Given("Game has number 24", () -> {
-            this.number = 24;
+        Given("Game has a {int}",(Integer int1) -> {
+            this.number = int1;
         });
-        Given("Game has number 60", () -> {
-            this.number = 60;
-        });
-        Given("Game has number 10", () -> {
-            this.number = 10;
-        });
-        Given("Game has number 11", () -> {
-            this.number = 11;
-        });
-
         When("Checking if number is divisible by 3 and 5", () -> {
             NumberChecker numberChecker = new NumberChecker();
             this.answer = numberChecker.checkIfDivisible(this.number);
