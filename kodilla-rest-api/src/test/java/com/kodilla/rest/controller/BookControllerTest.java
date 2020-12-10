@@ -34,7 +34,7 @@ class BookControllerTest {
         BookDto bookDto = new BookDto("TITLE 3", "AUTHOR 3");
 
         // when
-        bookController.addBook(bookDto);
+bookController.addBook(bookDto);
 
         // then
         Mockito.verify(bookServiceMock, Mockito.times(1)).addBook(bookDto);
