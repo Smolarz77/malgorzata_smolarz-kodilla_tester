@@ -56,4 +56,5 @@ include 'kodilla-cucumber'
 include 'kodilla-cucumber'
 include 'kodilla-cucumber2'
 include 'kodilla-basic-tests'
+include 'ta-soap-example'
 

@@ -7,6 +7,7 @@ Feature: Cash Withdrawal Happy Path
     And The balance of my wallet should be <balance>
     Examples:
       | money | amount  | contents | balance |
+      | money | amount  | contents | balance |
       | 400   | 390     | 390      | 10      |
       | 400   | 0       | 0        | 400     |
       | 400   | 400     | 400      | 0       |
