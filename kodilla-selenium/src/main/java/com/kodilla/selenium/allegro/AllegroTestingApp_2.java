@@ -29,7 +29,7 @@ public class AllegroTestingApp_2 {
             WebElement inputField2_button = driver.findElement(By.cssSelector("div > form > button"));
             inputField2_button.click();
 
-            //List<WebElement> element = driver.findElements(By.className("nazwa_klasy));
+
             List<WebElement> productionCard = driver.findElements(By.cssSelector("._9c44d_378hD > section > article"));
 
 

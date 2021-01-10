@@ -13,7 +13,7 @@ public class TestGoogle {
 
     @Before
     public void testSetup() {
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "c:/selenium-drivers/chrome/chromedriver.exe");
         driver = new ChromeDriver();
         driver.navigate().to("http:/www.google.com");
     }
@@ -28,5 +28,4 @@ public class TestGoogle {
         GoogleSearch googleSearch = new GoogleSearch(driver);
         googleSearch.searchResults();
     }
-
 }

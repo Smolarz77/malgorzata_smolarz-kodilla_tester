@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 class GamblingMachineTestSuite {
     GamblingMachine gamblingMachine = new GamblingMachine();
@@ -22,14 +22,20 @@ class GamblingMachineTestSuite {
             integers.add(five);
             integers.add(six);
 
+
+            GamblingMachine gamblingMachine = new GamblingMachine();
+
+            assertThrows(InvalidNumbersException.class, ()->gamblingMachine.howManyWins(integers));
         }
 
-   @ParameterizedTest
+            @ParameterizedTest
    @CsvFileSource(resources = "/gamblingMachine2.csv")
    public void shouldThrowException(String input) {
        Set<Integer> inputSet = Stream.of(input.split("-")).map(Integer::valueOf).collect(Collectors.toCollection(HashSet::new));
+
        assertThrows(InvalidNumbersException.class, () -> gamblingMachine.howManyWins(inputSet), "Wrong numbers provided");
 
 
    }}
+
 
