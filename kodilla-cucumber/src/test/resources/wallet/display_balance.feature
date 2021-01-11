@@ -6,4 +6,4 @@ Feature: Display balance
 
     Examples:
       | money | balance |
-      | 400  |   400   |
+      | 200  |   200   |

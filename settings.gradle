@@ -63,4 +63,6 @@ include 'kodilla-code-coverage'
 include 'kodilla-code-coverage'
 include 'untitled'
 include 'kodilla-code-coverage'
+include 'kodilla-selenium'
+include 'kodilla-selenium'
 

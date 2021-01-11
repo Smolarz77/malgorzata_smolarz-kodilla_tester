@@ -9,16 +9,16 @@ public class PreventUsers implements En {
     String message;
 
     public PreventUsers (){
-        Given("I have credited $200", () -> {
-            wallet.deposit(200);
+        Given("I have credited $100", () -> {
+            wallet.deposit(100);
         });
 
-        When("I withdraw $400", () -> {
-            message = cashier.withdraw(wallet, 400);
+        When("I withdraw $200", () -> {
+            message = cashier.withdraw(wallet, 200);
         });
 
         Then("Nothing should be dispensed", () -> {
-            assertEquals(200, wallet.getBalance());
+            assertEquals(100, wallet.getBalance());
             assertEquals(0, cashSlot.getContents());
         });
 

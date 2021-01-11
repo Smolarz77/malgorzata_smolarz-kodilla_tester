@@ -7,7 +7,6 @@ Feature: Cash Withdrawal Unhappy Path
     And The balance of my wallet is now <balance>
     Examples:
       | money | amount | contents | balance |
-      | money | amount | contents | balance |
       | 0     | 80     | 0        | 0       |
-      | 400   | 404    | 0        | 400     |
-      | 400   | 0      | 0        | 400     |
+      | 200   | 202    | 0        | 200     |
+      | 200   | 0      | 0        | 200     |
