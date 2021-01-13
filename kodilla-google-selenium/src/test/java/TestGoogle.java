@@ -28,4 +28,5 @@ public class TestGoogle {
         GoogleSearch googleSearch = new GoogleSearch(driver);
         googleSearch.searchResults();
     }
+
 }

@@ -21,4 +21,5 @@ public class GoogleResults extends AbstractPage {
     public void iSeeResults() {
         System.out.println("I see results");
         System.out.println(result.size());
-    }}
+    }
+}
